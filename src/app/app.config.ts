@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { provideHttpClient } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './pages/user/user.component';
 import { TableComponent } from './pages/table/table.component';
@@ -24,7 +23,13 @@ export const appConfig = {
         ]
       },
     ]),
-    importProvidersFrom(CommonModule),
+    importProvidersFrom(
+      CommonModule,
+      MatIconModule,
+      HeaderComponent,
+      SidebarComponent,
+      FooterComponent
+    ),
     provideHttpClient()
   ]
 }

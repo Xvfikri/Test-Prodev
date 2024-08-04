@@ -1,15 +1,24 @@
-.app-header {
-  background-color: #007bff;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #8A4B08;
   color: white;
-  padding: 20px;
-  text-align: center;
   position: fixed;
-  width: calc(100% - 200px);
   top: 0;
-  left: 220px;
-  z-index: 1000; /* Pastikan header berada di atas elemen lain */
+  z-index: 1001;
+  height: 50px;
+  width: 100%;
+  transition: width 0.3s;
 }
 
-.app-name h1 {
-  margin: 0;
+header mat-icon {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+header .app-name {
+ margin: 0 auto;
+
 }
