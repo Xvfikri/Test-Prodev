@@ -1,0 +1,12 @@
+.app-footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 200px);
+    left: 200px;
+    z-index: 1000; /* Pastikan footer berada di atas elemen lain */
+  }
+  

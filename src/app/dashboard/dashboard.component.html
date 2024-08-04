@@ -1,0 +1,8 @@
+<div class="dashboard-container">
+  <app-sidebar *ngIf="!isSidebarHidden"></app-sidebar>
+  <div class="content">
+    <app-header (toggleSidebar)="toggleSidebar()"></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</div>

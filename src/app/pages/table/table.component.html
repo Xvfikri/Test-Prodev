@@ -1,0 +1,19 @@
+<div *ngIf="error" class="error">{{ error }}</div>
+<table *ngIf="!error && users.length > 0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nama</th>
+      <th>Avatar</th>
+      <th>Dibuat Pada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td><img [src]="user.avatar" alt="{{ user.name }}" width="50"></td>
+      <td>{{ user.createdAt | date:'medium' }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,15 @@
+.app-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: calc(100% - 200px);
+  top: 0;
+  left: 220px;
+  z-index: 1000; /* Pastikan header berada di atas elemen lain */
+}
+
+.app-name h1 {
+  margin: 0;
+}
